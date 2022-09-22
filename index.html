@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Task</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Roboto", sans-serif;
+      }
+
+      .container header .top {
+        background-color: #19bc9c;
+        color: white;
+        text-align: center;
+        padding: 60px 0;
+      }
+
+      .container header .top h1 {
+        margin: 10px;
+      }
+
+      .container header nav {
+        background-color: #333333;
+        padding: 15px 0;
+      }
+
+      .container header nav a {
+        color: White;
+        text-decoration: none;
+        margin: 0 20px;
+      }
+
+      section h2 {
+        font-weight: 700;
+      }
+
+      .main {
+        display: flex;
+        padding: 20px;
+      }
+
+      .main .img {
+        background-color: darkgray;
+        padding: 15px;
+        margin: 10px 0;
+      }
+
+      .main .img p {
+        margin: 0;
+      }
+
+      .main .left {
+        width: 35%;
+        /* background-color: #ecd8d8; */
+        background-color: #f1f1f1;
+        /* background-color: lightcoral; */
+        padding:0 20px;
+      }
+
+      .main .right {
+        margin: 0 0 0 30px;
+      }
+
+      /* .main .right h2{
+            font-size: 1.8rem;
+        } */
+
+      .main p {
+        font-weight: 700;
+        margin: 20px 0;
+      }
+
+      .main section {
+        margin: 40px 0;
+      }
+
+      .bigimg {
+        height: 250px;
+      }
+
+      footer {
+        background-color: #dddddd;
+        padding: 35px;
+      }
+
+      footer h2 {
+        text-align: center;
+      }
+
+
+      @media only screen and (max-width: 992px) {
+        .container header nav {
+          text-align: center;
+        }
+
+        .main{
+            
+            flex-wrap: wrap;
+        }
+
+        .main .left {
+        width: 100%;
+      }
+
+      .main .right {
+        margin: 0 0 0 0px;
+        padding:0 20px;
+      }
+      }
+
+      @media only screen and (min-width: 993px) and (max-width: 1200px) {
+        .main .left {
+            width: 100%;
+        }
+      }
+
+      @media only screen and (min-width: 1201px) and (max-width: 1800px) {
+        .main .left {
+            width: 80%;
+        }
+      }
+  
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="top">
+          <h1>My Website</h1>
+          <p>With a <b>flexible</b> layout</p>
+        </div>
+        <nav>
+          <a href="">Home</a>
+          <a href="">Blog</a>
+          <a href="">About</a>
+          <a href="">Contact</a>
+        </nav>
+      </header>
+
+      <section class="main">
+        <div class="left">
+          <section>
+            <h2>About Me</h2>
+            <p>Photo of Me:</p>
+            <div class="img bigimg">
+              <p>Image</p>
+              <!-- <img src="" alt="Image"> -->
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
+              adipisci.
+            </p>
+          </section>
+
+          <section>
+            <h2>More Text</h2>
+            <p>Lorem ipsum dolor sit same.</p>
+            <div class="img">
+              <p>Image</p>
+              <!-- <img src="" alt="Image"> -->
+            </div>
+            <div class="img">
+              <p>Image</p>
+              <!-- <img src="" alt="Image"> -->
+            </div>
+            <div class="img">
+              <p>Image</p>
+              <!-- <img src="" alt="Image"> -->
+            </div>
+          </section>
+        </div>
+        <div class="right">
+          <section>
+            <h2>TITLE HEADING</h2>
+            <p>Title Description, Dec 7, 2017</p>
+            <div class="img bigimg">
+              <p>Image</p>
+              <!-- <img src="" alt="Image"> -->
+            </div>
+            <p>Some text...</p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos
+              dolor, quod minima corporis at veritatis, unde qui repellat vel,
+              ipsum illum. Asperiores quia labore debitis explicabo veritatis
+              blanditiis. Laudantium dolor, iusto hic, alias voluptatum eius
+              nihil quisquam dicta delectus sapiente dolores, at assumenda? Modi
+              nostrum culpa doloremque accusantium illo tenetur!
+            </p>
+          </section>
+
+          <section>
+            <h2>TITLE HEADING</h2>
+            <p>Title Description, Dec 7, 2017</p>
+            <div class="img bigimg">
+              <p>Image</p>
+              <!-- <img src="" alt="Image"> -->
+            </div>
+            <p>Some text...</p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos
+              dolor, quod minima corporis at veritatis, unde qui repellat vel,
+              ipsum illum. Asperiores quia labore debitis explicabo veritatis
+              blanditiis. Laudantium dolor, iusto hic, alias voluptatum eius
+              nihil quisquam dicta delectus sapiente dolores, at assumenda? Modi
+              nostrum culpa doloremque accusantium illo tenetur!
+            </p>
+          </section>
+        </div>
+      </section>
+
+      <footer>
+        <h2>Footer</h2>
+      </footer>
+    </div>
+  </body>
+</html>
